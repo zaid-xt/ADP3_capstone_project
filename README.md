@@ -7,7 +7,7 @@
 ---
 
 ### Software-class Diagram / UML? 
-- 
+- _how are we gonna add a diagram in the readme doc? add a link to an image?_
 ---
 
 ### About project
@@ -16,7 +16,7 @@
 
 ### Download
 ```
-git clone [repo-url]`
+git clone [repo-url]
 OR
 git clone --branch [branch-name] [repo-url]
 ```
