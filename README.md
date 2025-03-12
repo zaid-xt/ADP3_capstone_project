@@ -6,12 +6,12 @@
 - Branch:	230159478
 ---
 
-### Software-class Diagram / UML? 
-![alt text](./hotel_booking_system_S-C_Diagram.png)
+### Software-class Diagram
+!["Software class Diagram Hotel booking System"](./hotel_booking_system_S-C_Diagram.png)
 
 
 ### About project
-- A Java project for ... created using the IntelliJ IDE 
+- A Java project for managing a hotel-reservation system, created using the IntelliJ IDE 
 
 
 ### Download
@@ -23,5 +23,5 @@ git clone --branch [branch-name] [repo-url]
 
 
 ### Execute
-- Load and run the project using the Intellij IDE
+- Load and run the project using the IntelliJ IDE
 ---
