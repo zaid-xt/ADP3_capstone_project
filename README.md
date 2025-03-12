@@ -1,14 +1,14 @@
-# Project: 
+# Project: 	Hotel-booking System
 - Summary: 
-- Started: 
-- Updated: 
+- Started: 	12.03.25
+- Updated: 	12.03.25
 - Status: 	work-in-progress
 - Branch:	230159478
 ---
 
 ### Software-class Diagram / UML? 
-- _how are we gonna add a diagram in the readme doc? add a link to an image?_
----
+![alt text](./hotel_booking_system_S-C_Diagram.png)
+
 
 ### About project
 - A Java project for ... created using the IntelliJ IDE 
