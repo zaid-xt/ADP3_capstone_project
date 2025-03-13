@@ -1,4 +1,10 @@
-package com.college.entity;
+/*
+File name:  Reservation.java
+Author:     Ammaar
+Started:    12.03.25
+*/
+
+package com.college.domain;
 
 public class Reservation {
     private int reservationId;
