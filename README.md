@@ -1,9 +1,9 @@
-# Project: 	Hotel-booking System
+## Project: 	Hotel-booking System
 - Summary: 
 - Started: 	12.03.25
-- Updated: 	12.03.25
+- Updated: 	13.03.25
 - Status: 	work-in-progress
-- Branch:	230159478
+- _Branch:	pre-master_
 ---
 
 ### Software-class Diagram
