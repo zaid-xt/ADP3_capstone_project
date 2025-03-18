@@ -1,4 +1,4 @@
 package com.college.repository;
 
-public class EmployeeRepo{
+public class GuestRepository {
 }

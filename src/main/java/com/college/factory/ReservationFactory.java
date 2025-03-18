@@ -9,11 +9,11 @@ package com.college.factory;
 import com.college.domain.Reservation;
 
 public class ReservationFactory {
-    public static Reservation createReservation(){
-        return new Reservation.Builder()
-                .setReservationId(1)
-                .build();
-    }
+//    public static Reservation createReservation(){
+//        return new Reservation.Builder()
+//                .setReservationId(1)
+//                .build();
+//    }
 
     public static Reservation createReservation(
             int rId,
