@@ -1,5 +1,5 @@
 /*
-File name:  Reservation.java
+File name:  Reservation.java (Model/Entity Class)
 Author:     Ammaar
 Started:    12.03.25
 */

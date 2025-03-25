@@ -1,19 +1,6 @@
 package com.college.utilities;
 
 public class Helper {
-
-    // joshua
-//    public static boolean nullOrEmpty(String value) {
-//
-//
-//        if(value.isEmpty() ||value ==null){
-//            return true;
-//        }
-//
-//        return false;
-//    }
-//
-
     // Generate a Guest ID based on some logic (for example, generating a random number)
     public static Integer generateGuestID() {
         // This could be replaced with a more complex logic, for now it returns a random number

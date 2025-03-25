@@ -1,31 +1,32 @@
 /*
-File name:  ReservationRepository.java
+File name:  ReservationRepository.java (Repository Class)
 Author:     Ammaar
 Started:    12.03.25
-updated:    18.03.25
+updated:    24.03.25
 */
 
 package com.college.repository;
 
 import com.college.domain.Reservation;
-//import com.college.repository.InReservationRepo;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
-public class ReservationRepository implements IReservation {
-//    private final HashMap<Integer, Reservation> Reservations = new HashMap<>();
-//    private final ArrayList<Reservation> reservations = new ArrayList<>();
-    // -----------------------------
-
-
+public class ReservationRepository implements IReservationRepository {
     // for singleton pattern
     // checking if another instance of the class was already created
-    private static IReservation repo = null;
-    public static IReservation getRepo(){
+    private static IReservationRepository repo = null;
+    private static int counter;
+    public static IReservationRepository getRepo(){
+        counter++;
+        System.out.println("\ninstances: " + counter);
+
+
         if(repo == null){
+            System.out.println("Creating object...");
             repo = new ReservationRepository();
+            return repo;
         }
+        System.out.println("Object already exists");
         return repo;
     }
 
@@ -36,11 +37,10 @@ public class ReservationRepository implements IReservation {
     // -----------------------------
 
     @Override
-//    public Reservation add(Reservation obj) {
-//    public Reservation save(Reservation obj) {
     public Reservation create(Reservation obj) {
         if (this.reservations.add(obj)){
-            System.out.println("added to arraylist");
+            System.out.println(obj);
+            System.out.println(" * added to arraylist");
             return obj;
         }
         return null;
@@ -50,38 +50,48 @@ public class ReservationRepository implements IReservation {
      * Returns an object at a specific index
      * */
     @Override
-    public Reservation read(Integer integer) {
-        System.out.println("object found");
-
-        System.out.println(this.reservations.get(integer));
-//        return this.reservations.get(integer);
+    public Reservation read(Integer reservationId) {
+        for (int a=0; a<this.reservations.size(); a++){
+            if (reservationId == reservations.get(a).getReservationId()){
+                System.out.println(" * object found");
+                return reservations.get(a);
+            }
+        }
+        System.out.println(" * object not found");
         return null;
-
-        // or use loop
     }
 
     @Override
-    public boolean delete(Integer integer) {
-        Reservation reservationToDel = this.read(integer);
+    public boolean delete(Integer reservationId) {
+        Reservation reservationToDel = this.read(reservationId);
         if (reservationToDel == null){
             return false;
         }
-        System.out.println("removed from arraylist");
+        System.out.println(" * removed from arraylist");
         return this.reservations.remove(reservationToDel);
-
-        // return this.read(integer) ? this.reservations.remove(reservationToDel) : null;
-
     }
 
     @Override
     public Reservation update(Reservation obj) {
-        System.out.println("updated");
+        int reservationId = obj.getReservationId();
+        Reservation reservationObj = this.read(reservationId);
+
+        if (reservationObj == null){
+            return null;
+        }
+
+        boolean success = this.delete(reservationId);
+        if (success){
+            // adding new object
+            System.out.println(" ** updated");
+            if (this.reservations.add(reservationObj)){
+                return reservationObj;
+            }
+        }
 
         return null;
     }
-
-
-
+    // -----------------------------
 
     @Override
     public ArrayList<Reservation> getAll() {
