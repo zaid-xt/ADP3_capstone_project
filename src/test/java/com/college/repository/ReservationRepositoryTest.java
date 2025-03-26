@@ -12,7 +12,6 @@ import com.college.factory.ReservationFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-//@TestMethodOrder(MethodOrder.MethodName.class)
 class ReservationRepositoryTest {
     static IReservationRepository testReservationRepo;
     Reservation reservation1 = ReservationFactory.createReservation(100, "10am", "12pm");
