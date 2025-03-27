@@ -1,6 +1,9 @@
+/* Room.java
+Room Model class
+Author: joshua twigg (222153881)
+Date: 27 March 2025
+*/
 package com.college.domain;
-
-// remove setters from class
 
 public class Room {
     private String roomID;

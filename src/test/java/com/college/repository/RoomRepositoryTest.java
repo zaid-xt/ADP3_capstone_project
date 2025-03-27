@@ -1,16 +1,19 @@
+/* RoomRepositoryTest .java
+RoomRepositoryTest (Tests for RoomRepository class)
+Author: joshua twigg (222153881)
+Date: 27 March 2025
+*/
 package com.college.repository;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import com.college.domain.Room;
-import com.college.repository.RoomRepository;
 import com.college.factory.RoomFactory;
 
 import java.util.HashMap;
 
 public class RoomRepositoryTest {
-
     private RoomRepository roomRepository;
     private Room roomOne;
     private Room roomTwo;
