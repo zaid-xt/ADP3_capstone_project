@@ -1,3 +1,9 @@
+/* RoomFactory.java
+RoomFactory Model class
+Author: joshua twigg (222153881)
+Date: 27 March 2025
+*/
+
 package com.college.factory;
 
 import com.college.domain.Room;

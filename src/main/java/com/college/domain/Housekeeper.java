@@ -1,3 +1,8 @@
+/*  Housekeeper.java
+    Housekeeper Entity
+    Author: Muaath Slamong (230074138)
+    Date: 19 March 2025
+*/
 package com.college.domain;
 
 public class Housekeeper {

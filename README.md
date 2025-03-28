@@ -2,7 +2,7 @@
 - Started: 	12.03.25
 - Updated: 	25.03.25
 - Status: 	work-in-progress
-- _Branch:	pre-master_
+- _Branch:	pre-master || MASTER_
 ---
 
 ### Software-class Diagram

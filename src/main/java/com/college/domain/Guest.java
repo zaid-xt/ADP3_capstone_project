@@ -1,3 +1,8 @@
+/* Guest.java
+Guest Model Class
+Author: Zaid Theunissen (221084142)
+Date: 26 March 2025
+*/
 package com.college.domain;
 
 public class Guest {

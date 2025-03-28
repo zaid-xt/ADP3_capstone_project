@@ -1,3 +1,9 @@
+/* RoomRepository.java
+RoomRepository Model class
+Author: joshua twigg (222153881)
+Date: 27 March 2025
+*/
+
 package com.college.repository;
 
 import com.college.domain.Room;
